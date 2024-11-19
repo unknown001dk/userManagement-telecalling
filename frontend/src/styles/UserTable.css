@@ -1,0 +1,133 @@
+/* General container styling */
+.table-container {
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  text-align: left;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 600px; /* Ensures a minimum width */
+}
+
+/* Table header */
+thead {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  color: white;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Table row styling */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #e8f5e9;
+  transition: background 0.3s ease;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-buttons button {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button:nth-child(1) {
+  background: linear-gradient(45deg, #2196f3, #64b5f6); /* Blue for edit */
+}
+
+.action-buttons button:nth-child(1):hover {
+  background: linear-gradient(45deg, #1e88e5, #42a5f5);
+}
+
+.action-buttons button:nth-child(2) {
+  background: linear-gradient(45deg, #f44336, #e57373); /* Red for delete */
+}
+
+.action-buttons button:nth-child(2):hover {
+  background: linear-gradient(45deg, #e53935, #ef5350);
+}
+
+/* Export button styling */
+.export-button {
+  background: linear-gradient(45deg, #4caf50, #66bb6a);
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.export-button:hover {
+  background: linear-gradient(45deg, #45a049, #81c784);
+}
+
+.export-button:active {
+  background: linear-gradient(45deg, #3e8e41, #4caf50);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+    min-width: 100%; /* Allow table to scroll if necessary */
+  }
+
+  th, td {
+    padding: 10px 12px;
+  }
+
+  .action-buttons button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Add scroller for very small screens */
+@media (max-width: 500px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}

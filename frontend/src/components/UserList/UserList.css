@@ -1,0 +1,294 @@
+/* src/components/UserList.css */
+
+.user-list-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.user-table th {
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.user-table td {
+  color: #333;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-row {
+  animation: fadeInUp 0.3s ease;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* src/components/UserList.css */
+
+.user-list-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.user-table th {
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.user-table td {
+  color: #333;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-row {
+  animation: fadeInUp 0.3s ease;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-list-container {
+    padding: 15px;
+  }
+
+  .user-list-title {
+    font-size: 1.5rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-list-container {
+    padding: 10px;
+  }
+
+  .user-list-title {
+    font-size: 1.3rem;
+  }
+
+  /* Make table scrollable on small screens */
+  .user-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  /* Stack actions column on a new line */
+  .user-table td:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .delete-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.edit-button {
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.download-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-list-container {
+    padding: 15px;
+  }
+
+  .user-list-title {
+    font-size: 1.5rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-list-container {
+    padding: 10px;
+  }
+
+  .user-list-title {
+    font-size: 1.3rem;
+  }
+
+  /* Make table scrollable on small screens */
+  .user-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  /* Stack actions column on a new line */
+  .user-table td:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .delete-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
